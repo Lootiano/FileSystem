@@ -12,6 +12,7 @@ public class ReadFile {
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
                 System.out.println(data);
+                System.out.println("Palavras escritas no arquivo: " + myObj.getName());
             }
         } catch (FileNotFoundException e) {
             System.out.println("An error ocurred.");
