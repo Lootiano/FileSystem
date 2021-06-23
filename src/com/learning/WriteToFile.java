@@ -6,9 +6,10 @@ import java.util.Scanner;
 
 public class WriteToFile {
     public static void writing() {
-        Scanner myObj = new Scanner(System.in);
         try {
-            FileWriter myWriter = new FileWriter("Example.txt");
+            String archive = Generating.GeneratingFile();
+            Scanner myObj = new Scanner(System.in);
+            FileWriter myWriter = new FileWriter(archive + ".txt");
             System.out.println("Escreva o que você deseja: ");
             myWriter.write(myObj.nextLine());
             myWriter.close();
