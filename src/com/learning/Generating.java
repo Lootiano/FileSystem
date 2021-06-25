@@ -7,7 +7,6 @@ public class Generating {
         Scanner myObj = new Scanner(System.in);
         System.out.println("Digite o nome do arquivo: ");
         String archive = myObj.nextLine();
-        String Generating = archive;
         return archive;
     }
 }
