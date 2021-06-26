@@ -5,11 +5,10 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class WriteToFile {
-    public static void writing() {
+    public static void writing(String pathName) {
         try {
-            String archive = Generating.GeneratingFile();
             Scanner myObj = new Scanner(System.in);
-            FileWriter myWriter = new FileWriter(archive + ".txt");
+            FileWriter myWriter = new FileWriter(pathName + ".txt");
             System.out.println("Escreva o que você deseja: ");
             myWriter.write(myObj.nextLine());
             myWriter.close();
