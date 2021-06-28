@@ -5,9 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class ReadFile {
-    public static void reading(String pathName) {
+    public static void reading(String creatingFile) {
         try {
-            File myObj = new File(pathName + ".txt");
+            File myObj = new File(creatingFile + ".txt");
             Scanner myReader = new Scanner(myObj);
             while (myReader.hasNextLine()) {
                 String data = myReader.nextLine();
